@@ -1,0 +1,53 @@
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+}
+
+body {
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(
+			to bottom,
+			transparent,
+			rgb(var(--background-end-rgb))
+		)
+		rgb(var(--background-start-rgb));
+}
+
+/* Wallet Adapter Custom Styles */
+.wallet-adapter-button {
+	@apply px-4 py-2 rounded-md font-semibold text-white bg-blue-600 hover:bg-blue-700 transition-colors;
+}
+
+.wallet-adapter-modal-wrapper {
+	@apply bg-white;
+}
+
+.wallet-adapter-modal-button-close {
+	@apply bg-gray-100 hover:bg-gray-200;
+}
+
+.wallet-adapter-modal-title {
+	@apply text-gray-900;
+}
+
+.wallet-adapter-modal-content {
+	@apply text-gray-600;
+}
+
+.wallet-adapter-modal-list {
+	@apply bg-gray-50;
+}
+
+.wallet-adapter-modal-list-more {
+	@apply text-blue-600;
+}
+
+.wallet-adapter-modal-list-more:hover {
+	@apply text-blue-700;
+}
